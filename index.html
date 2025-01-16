@@ -1,166 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <div class="heading">
-            My Landing Page
-        </div>
-        <span class="sideMenuButton"
-            onclick="openNavbar()">
-            &#9776
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>Dheeraj Singh</h2>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-        </span>
-        <div class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Sign Up</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="sideNavigationBar"
-        id="sideNavigationBar">
-        <a href="#" class="closeBottom"
-        onclick="closeNavbar()">
-        &#x274C</a>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Sign Up</a>
-    </div>
+    <section id="about">
+      <h1>About Me</h1>
+      <p>
+        Hello, I'am Dheeraj Singh, a driven and enthusiastic BCA student with a
+        passion for technology and innovation. I'm currently pursuing my UG
+        degree in compuer applications, where I'm gaining a solid foundation in
+        programimg languages, software development , and data structures.I'm
+        excited to apply my skills and knowledge to real- world problems and
+        contribute to the ever-evolving tech landscape.
+      </p>
+      <img src="IMG-20240724-WA0037.jpg" alt="Profile pic" />
+    </section>
+    <section id="skills">
+      <h1>My Skills</h1>
+      <ul>
+        <li>Programming in C</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JAVA</li>
+        <li>MySQL</li>
+      </ul>
+    </section>
 
-    <div class="line" id="Home">
-        <div class="side1">
-        <h1>Dhiru Singh
-        </h1>
-        <button>
-            <a href="https://www.codewithharry.com/">Explore More</a>
-        </button>
-        </div>
-        <div>
-            <div class="side2">
-                <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220401124017/HTML-Tutorial.png" width="500" alt="">
-            </div>
-        </div>
+    <section id="project">
+      <h1>My Project</h1>
+      <ul>
+        <li>
+          <h2>Project</h2>
+          <p>
+            This is a landing page.For making this project I use HTML and
+            CSS.This is a task 1 of codsoft.
+          </p>
+          <img src="FireShot Capture 007 - Landing Page - .png" alt="" />
+        </li>
+      </ul>
+    </section>
 
-        <section class="about" id="My Project">
-            <div class="content">
-                <div class="tittle">
-                    <span>Courses</span>
-                </div>
-                        <div class="boxes">
-                        <div class="box">
-                        <div class="topic">
-                            <a href="" target="_blank"> <span> HTML </span></a>
-                        </div>
-                        <P>
-                            HTML stands for HyperText 
-                        Markup Language. It is used 
-                        to design web pages using  
-                        the markup language.
+    <section id="resume">
+      <h1>My Resume</h1>
+      <p>
+        Ambitious and organized individual with a strong work ethic and
+        excellent communication skillls.Proficient in JAVA with a strong
+        understanding of OOp's principle.
+      </p>
+      <a href="DHEERAJ SINGH.pdf" download="resume">Download</a>
+    </section>
 
-                        </P>
-                    </div>
-                        <div class="box">
-                            <div class="topic">
-                                <a href="" target="_blank">
-                                   <span> CSS</span>
-                                </a>
-                            </div>
-                            <p> CSS stands for Cascading Style Sheets. It is a stylesheet language that is used to describe the visual presentation of a web page written in HTML (Hypertext Markup Language).
-    
-                                HTML creates the structure of the page, while CSS adds styling to that structure. This tutorial assumes that you have prior knowledge of HTML. If that's not the case, you can follow the HTML tutorial first.
-                            </p>
-                        </div>
-                    <div class="box">
-                        <div class="topic">
-                            <a href="" target="_blank"> <span>Javascript </span></a>
-                        </div>
-                        <p>
-                            JavaScript (JS) is the most 
-                        popular lightweight, interpreted 
-                        compiled programming language.
+    <section id="contact">
+      <h1>Get in Touch</h1>
+      <p>
+        If you have any questions, concerns , or need assistance, please don't
+        hesitate to reach out.Here are the ways you can get in touch:
+      </p>
+      <form action="">
+        <input type="text" name="name" placeholder="Name" />
+        <input type="email" name="email" placeholder="Email" />
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
 
-                        </p>
-                    </div>
-                </div>
-            </div> 
-
-        </section>
-
-        <section class="contact" id="contact">
-            <div class="content">
-                <div class="tittle"><span>Sign Up</span></div>
-                <div class="contactmenu">
-                    <div class="input1">
-                        <div class="label1">Your Nme</div>
-                        <div class="input2">
-                            <input type="text" placeholder="Enter Your Name">
-                        </div>
-                        <div class="label1"> <label>Your Email</label></div>
-                        <div class="input2">
-                            <input type="text" placeholder="Enter Your Email Here">
-                        </div>
-                        <div class="label1">
-                            <label>Your Password</label>
-                        </div>
-                        <div class="input2">
-                            <input type="text" placeholder="Enter Your Password Here">
-                        </div>
-                        <div class="button">
-                            <button>Sign Up</button>
-                        </div>
-                    </div>
-                    <div class="input3">
-                        <div class="rightside1">
-                            <div class="tittle1">
-                                <span>
-                                    Contact Us
-                                </span>
-                            </div>
-                            <div class="content1">
-                                A-4/104,Ground Floor,Vibhav khand -3
-                                near Tree park,Sector-4,
-                                Lucknow- 226010
-                                Uttar Pradesh
-                            </div>
-                            <div class="tittle1">
-                                <span>More Information</span>
-                            </div>
-                            <div class="content1">
-                                Greetings to all the Coders out there!
-                                We welcome you to the platform where we
-                                consistently strive to offer the best 
-                                of education. This platform has been 
-                                designed for everyone wishing to 
-                                expand their knowledge, share their 
-                                knowledge and is ready to grab their 
-                                dream job. We have millions of articles,
-                                live as well as online courses, thousands 
-                                of tutorials and much more just for the 
-                                geek inside you.Thank you for choosing 
-                                and supporting us!
-    
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
-            <div class="footer">
-                <span>
-                    Created By 
-                    <a href="https://www.codewithharry.com/" target="_blank">CodeWithHarry</a>
-
-                </span>
-            </div>
-        </footer>
-        
-</body>
+    <footer>
+      <p>&copy;2024 My Portfolio</p>
+    </footer>
+  </body>
 </html>
